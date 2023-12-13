@@ -18,14 +18,16 @@ class Libpostal < Formula
                             "--disable-dependency-tracking",
                             "--disable-silent-rules",
                             "--prefix=#{prefix}",
-                            "--datadir=#{share}/libpostal-data"
+                            "--datadir=#{share}/libpostal-data",
+                            "MODEL=senzing"
     else
       system "./configure", "--disable-debug",
                             "--disable-dependency-tracking",
                             "--disable-silent-rules",
                             "--disable-sse2",
                             "--prefix=#{prefix}",
-                            "--datadir=#{share}/libpostal-data"
+                            "--datadir=#{share}/libpostal-data",
+                            "MODEL=senzing"
     end
     
     system "make", "install"
