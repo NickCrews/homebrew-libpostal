@@ -1,5 +1,7 @@
 # libpostal's homebrew repo
 
+Fork of https://github.com/robsalasco/homebrew-libpostal/, using Senzing's training data.
+
 [libpostal](https://github.com/openvenues/libpostal) is a powerful tool to normalize address using NLP around the world.
 
 ## What is this?
@@ -13,7 +15,7 @@ I use macOS and I need a convenient way to use the lib so I built a repo ~~meanw
 ## How can I use it?
 
 ```
-brew tap robsalasco/libpostal
+brew tap NickCrews/libpostal
 brew install libpostal
 ```
 ## Using posteR with the lib
